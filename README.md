@@ -9,6 +9,7 @@ pip install yteva
 ```
 
 ## Usage
+This is for Pyrogram users.
 
 ```python
 from pyrogram import Client
@@ -23,6 +24,20 @@ async async def main():
     print("Downloaded:", result)
     await app.stop()
 ```
+If you are using any program you can extract the link
+```python
+from yteva import YTeva_direct
+
+
+async def main():
+    yd = YTeva_direct(api_key="API_KEY")
+    test = await yd.play_audio_direct("VIDEO_ID") 
+    print(test)
+
+if __name__ == "__main__":
+    asyncio.run(main())  
+```
+
 
 ## License
 
