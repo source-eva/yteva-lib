@@ -1,6 +1,5 @@
 import aiohttp
 import asyncio
-from pyrogram import Client
 import httpx
 import http.client, json
 import requests, os
@@ -66,6 +65,7 @@ async def verif_auido_direct(KEY, video_id: str):
 
 class YTeva:
     def __init__(self, api_key: str, bot_app, max_retries=30, retry_delay=3000):
+        from pyrogram import Client
         self.api_key = api_key
         self.bot_app = bot_app
         self.channel = "Data_eva"
