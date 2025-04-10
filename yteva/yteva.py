@@ -134,6 +134,19 @@ class YTeva_direct:
         message_id = int(telegram_link.split("/")[-1])
         return message_id
 
+  
+    async def fetch_video_link_direct(self, video_id: str):
+        return await verif_video(self.api_key, video_id)
+
+    async def play_video_direct(self, video_id: str):
+        result = await self.fetch_video_link_direct(video_id)  
+        if result["type"] == "live":
+            return result["url"] 
+        telegram_link = result["url"]
+        message_id = int(telegram_link.split("/")[-1])
+        return message_id
+
+
 
     async def close(self):
         await self.session.close()
