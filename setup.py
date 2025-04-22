@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="yteva",
-    version="2025.4.14",
+    version="2025.4.15",
     packages=find_packages(),
     install_requires=[
         "aiohttp",
