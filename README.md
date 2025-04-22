@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/ItalyMusic/ytevalogo/main/ytevalogo.png" alt="YTeva Logo">
 </p>
 
-YTeva is a Python library that fetches and downloads audio files using Pyrogram.
+YTeva is a Python library that fetches and downloads audio files using Pyrogram and Search youtube.
 
 ## Installation
 
